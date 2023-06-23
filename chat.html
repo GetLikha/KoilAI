@@ -1,0 +1,103 @@
+<!doctype html><html class="" lang="en"><head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.14">
+    <!-- End of generator meta tag -->
+    <script src="js/jquery.js"></script>
+    
+    
+    <script src="js/front-end.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/front-end.css">
+
+    
+    
+    
+    <title>Koil AI - chat</title>
+    
+
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><link href="css/AI.png" rel="shortcut icon"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><style>body { opacity: 0; transition: .25s opacity ease; }</style></head>
+
+<body class="body-initial all-style prevent-resizable prevent-selectable editable-style silex-runtime silex-published" data-current-page="page-chat">
+    
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="editable-style section-element silex-id-1683740967507-4 page-page-1"><div class="editable-style container-element silex-id-1683740967508-5 silex-element-content website-width prevent-draggable"><a class="editable-style html-element silex-id-1683740991314-6" href="index.html"><div class="silex-element-content"><h1 style="text-align: center; font-size: 30px;">
+   <span id="aria"><strong>Koil AI</strong></span>
+</h1></div></a><a class="editable-style html-element silex-id-1683741755524-5 page-link-active" href="chat.html"><div class="silex-element-content"><h2><span id="aria">Start Now</span></h2></div></a><a class="editable-style text-element silex-id-1683741705932-0" href="index.html"><div class="silex-element-content normal"><h2>Home</h2><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></a><a class="editable-style text-element silex-id-1683741717370-1" href="#first"><div class="silex-element-content normal"><h2>Why Free?</h2><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></a></div></section><section class="editable-style section-element silex-id-1683743674580-7 page-chat paged-element paged-element-visible"><div class="editable-style container-element silex-id-1683743674580-8 silex-element-content website-width prevent-draggable"><div class="editable-style html-element silex-id-1683743681864-9"><div class="silex-element-content"><div class="chat-input">
+  <input type="text" class="user-input" placeholder="Type your message here">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <button class="send-button">Send</button>
+    </a>
+</div>
+</div></div><div class="editable-style container-element silex-id-1683743876046-11"><div class="editable-style image-element silex-id-1683743862273-10"><img src="assets/AI.png"></div><div class="editable-style html-element silex-id-1683743996950-12"><div class="silex-element-content"><div id="container">
+  <span id="text"></span>
+  <span id="cursor"></span>
+</div>
+<script>
+    function animateText() {
+  const textElement = document.getElementById('text');
+  const text = "Hi there! How can I help you today?";
+  let index = 0;
+
+  function type() {
+    textElement.textContent += text[index];
+    index++;
+
+    if (index === text.length) {
+      clearInterval(typingInterval);
+    }
+  }
+
+  const isInViewport = (element) => {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+
+  const startTypingWhenVisible = () => {
+    if (isInViewport(textElement)) {
+      textElement.style.opacity = 1;
+      typingInterval = setInterval(type, 100);
+      window.removeEventListener('scroll', startTypingWhenVisible);
+    }
+  };
+
+  window.addEventListener('scroll', startTypingWhenVisible);
+  startTypingWhenVisible();
+}
+
+document.addEventListener('DOMContentLoaded', animateText);
+</script></div></div></div><div class="editable-style html-element silex-id-1683745374190-14"><div class="silex-element-content"><p style="color: gray; font-size: 15px; text-align: center;"> <strong>Koil AI 01/22/23 Version: Free research preview. Our goal is to provide everyone the capability to change our current education system through action to push real change. Additionally, we believe every system should be decentralized and powered by regular users to provide the maximum efficiency and privacy. For any issues, contact us at www.getlikha.com</strong> </p></div></div></div></section></body></html>
